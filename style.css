@@ -1,0 +1,272 @@
+body{
+  background-color: #FF7F00;
+}
+
+h1{
+  font-family: arial;
+  font-size: 40px;
+  margin-left: 30px;
+  color: #fff;
+}
+
+.linha{
+  border-top: 1px solid #fff;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: -30px;
+}
+
+.halloween img{
+  width: 300px;
+  position: relative;
+  top: 100px;
+  left: 10%
+}
+
+.sotexto{
+  position: absolute;
+  top: 1050px;
+  left: 5%;
+  width: 90%;
+  font-size: 21px;
+  font-family: arial;
+}
+
+.halloween p{
+  width: 50%;
+  position: absolute;
+  top: 750px;
+  left: 40%;
+  font-size: 21px;
+  font-family: arial;
+}
+
+p{
+  color: #fff;
+}
+
+.carousel {
+  width:90%;
+  margin:4em auto;
+  /*height:300px;/*ajustar altura do carrossel e a sombra*/
+    position: relative;
+  top: 100px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 400px;
+  }
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  /*height:300px;/*ajustar altura da caixa*/
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s ease-out;
+    transition: opacity 0.7s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    /*height:auto;/*ajustar altura da imagem interna*/
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(255, 255, 255, 0.328);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+  
+  
+}
+
+.carousel-control.prev {
+    left: 2%;
+  user-select: none;
+}
+
+.carousel-control.next {
+    right: 2%;
+  user-select: none;
+}
+
+.carousel-control:hover {
+    background: rgba(225, 0, 0, 0.5);
+    color: #fff;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  padding:0 10px;
+}
+
+.carousel-bullet:hover {
+    color: #000;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: orange;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(225, 0, 0, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+#aceso{
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 24px;
+  font-family: arial;
+  position: relative;
+  top: 100px;
+  left: -108px;
+  background-color: #FF7F00;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+
+#aceso:hover{
+  background-color: #fff;
+  border: 1px solid orange;
+  color: orange;
+  transform: scale(1.2);
+}
+  
+  #apagado:hover{
+  background-color: #fff;
+  border: 1px solid orange;
+  color: orange;
+  transform: scale(1.2);
+}
+
+#apagado{
+   width: 150px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 24px;
+  font-family: arial;
+  position: relative;
+  top: 100px;
+  left: -260px;
+  display: blok;
+  background-color: #FF7F00;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 999px){
+  #aceso{
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 24px;
+  font-family: arial;
+  position: relative;
+  top: 100px;
+  left: -158px;
+  background-color: #FF7F00;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+
+#aceso:hover{
+  background-color: #fff;
+  border: 1px solid orange;
+  color: orange;
+  transform: scale(1.2);
+}
+  
+  #apagado:hover{
+  background-color: #fff;
+  border: 1px solid orange;
+  color: orange;
+  transform: scale(1.2);
+}
+
+#apagado{
+   width: 150px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 24px;
+  font-family: arial;
+  position: relative;
+  top: 100px;
+  left: -312px;
+  background-color: #FF7F00;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+}
